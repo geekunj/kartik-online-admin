@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.CatalogueNameInventory"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/stock_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock Availabilty"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginTop="32dp"
+            android:focusable="true"
+            android:gravity="left"
+            android:padding="4dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Out of Stock"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+            <Switch
+                android:id="@+id/switch_out_of_stock"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:weightSum="1"
+            android:layout_marginTop="32dp"
+            android:padding="4dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="0.4"
+                android:text="Availablity Quantity :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/et_available_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.6"
+                android:hint="tap to enter qty"
+                android:textAlignment="textEnd"
+                android:inputType="number"
+                android:padding="4dp"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Show out of stock to\ncatalogue visitor"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+            <Switch
+                android:id="@+id/switch_show_out_of_stock"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_force_allow"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:text="Force allow order\non out of stock product"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switch_force_allow_order"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_force_allow"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

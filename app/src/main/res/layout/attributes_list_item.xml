@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/crdv_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_attribute_text"
+                android:text="Men's Formal"
+                android:drawableRight="@drawable/ic_swap_horiz"
+                android:drawableTint="@android:color/black"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#E4E4E4"/>-->
+
+</LinearLayout>

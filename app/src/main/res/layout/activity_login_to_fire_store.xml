@@ -1,0 +1,105 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginToFireStore">
+
+    <ImageView
+        android:src="@drawable/kartik_online_logo"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_msg_admin" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l_email_et"
+
+            android:text="mayank@gmail.com"
+            android:textSize="16sp"
+            android:layout_gravity="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="24dp"
+        android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/l_pwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12345678"
+            android:inputType="textPassword"
+
+            android:layout_gravity="center"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/l_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/login_text"
+        android:background="@drawable/buttonbackground"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/login_forget_password_tv"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_pass_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_create_account"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:text="@string/create_acc_text"/>
+
+    <TextView
+        android:id="@+id/tv_phone_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="@string/login_with_phone"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

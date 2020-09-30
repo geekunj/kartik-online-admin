@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:weightSum="1"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AdminOtherFragment">
+
+    <LinearLayout
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_add_banner"
+            android:text="Add Banner"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/addsymbol"
+            android:inputType="none"
+            android:clickable="true"
+            android:focusable="false"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_add_cat"
+            android:text="Add Category"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/addsymbol"
+            android:inputType="none"
+            android:clickable="true"
+            android:focusable="false"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/et_notify"
+            android:text="Broadcast Notification"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/addsymbol"
+            android:inputType="none"
+            android:clickable="true"
+            android:focusable="false"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et_add_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/addsymbol"
+            android:padding="14dp"
+            android:inputType="none"
+            android:clickable="true"
+            android:focusable="false"
+            android:editable="false"
+            android:text="Add Size" />
+
+        <EditText
+            android:id="@+id/et_add_color"
+            android:text="Add Color"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/addsymbol"
+            android:inputType="none"
+            android:clickable="true"
+            android:focusable="false"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/et_add_qty"
+            android:text="Add Quantity"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/addsymbol"
+            android:inputType="none"
+            android:clickable="true"
+            android:focusable="false"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et_add_set_qty"
+            android:text="Add Set Quantity"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/addsymbol"
+            android:inputType="none"
+            android:clickable="true"
+            android:focusable="false"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <!--
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/adother_logout"
+            android:text="Logout"
+            android:background="@drawable/buttonbackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    -->
+
+</LinearLayout>

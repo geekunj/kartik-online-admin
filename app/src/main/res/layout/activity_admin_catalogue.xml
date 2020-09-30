@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".activities.Admin_Catalogue">
+   <androidx.cardview.widget.CardView
+       android:padding="2dp"
+       android:layout_gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:padding="4dp"
+            android:gravity="center"
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <GridLayout
+               android:padding="8dp"
+               android:columnCount="2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:id="@+id/ad_catbrand_img1"
+                   android:padding="2dp"
+                   android:background="@drawable/ic_add_circle_black_24dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+                   <ImageView
+                       android:id="@+id/ad_catbrand_img2"
+                       android:padding="2dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/ic_add_circle_black_24dp" />
+                   <ImageView
+                       android:id="@+id/ad_catbrand_img3"
+                       android:padding="2dp"
+                       android:background="@drawable/ic_add_circle_black_24dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+                   <ImageView
+                       android:id="@+id/ad_catbrand_img4"
+                       android:padding="2dp"
+                       android:background="@drawable/ic_add_circle_black_24dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+           </GridLayout>
+
+           <LinearLayout
+               android:padding="8dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/acat_brand_tv"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="4dp"
+                   android:text="@string/g_b_products"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+               <Button
+                   android:id="@+id/acat_bpreview_btn"
+                   android:text="Preview"
+                   app:icon="@drawable/viewbutton"
+                   app:backgroundTint="@color/colorAccent"
+                   android:textColor="@android:color/white"
+                   android:textAllCaps="false"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <Button
+                   android:id="@+id/act_bedit_btn"
+                   android:text="Edit"
+                   android:background="@drawable/backgroundbtn"
+                   app:backgroundTint="@android:color/black"
+                   android:textColor="@android:color/white"
+                   app:icon="@drawable/ic_edit_black_24dp"
+                   app:iconTint="@android:color/white"
+                   android:textAllCaps="false"
+                   android:layout_width="wrap_content"
+                   android:layout_marginTop="8dp"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+           <Switch
+               android:id="@+id/acat_swith_btn"
+               android:padding="8dp"
+               android:text="Published "
+               android:layout_marginLeft="48dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+   </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:weightSum="1"
+    android:layout_height="match_parent"
+    tools:context=".activities.Admin_Other">
+
+    <LinearLayout
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/adother_adban_et"
+            android:text="Add Banner"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/addsymbol"
+            android:inputType="none"
+            android:clickable="true"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/adother_adcat_et"
+            android:text="Add Catagory"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/addsymbol"
+            android:inputType="none"
+            android:clickable="true"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/adother_bornot_et"
+            android:text="BroadCast Notification"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/addsymbol"
+            android:inputType="none"
+            android:clickable="true"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/adother_asiz_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:editable="false"
+            android:drawableRight="@drawable/addsymbol"
+            android:inputType="none"
+            android:padding="14dp"
+            android:text="Add Size" />
+
+        <EditText
+            android:id="@+id/adothercolor_et"
+            android:text="Add Color"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/addsymbol"
+            android:inputType="none"
+            android:clickable="true"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/adother_aquant_et"
+            android:text="Add Quantity"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/addsymbol"
+            android:inputType="none"
+            android:clickable="true"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:text="Terms and Condition"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:text="About Us"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <Switch
+            android:id="@+id/adother_couroption_switch"
+            android:layout_marginTop="16dp"
+            android:textSize="18dp"
+            android:text="Courier Option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+<!--
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/adother_logout"
+            android:text="Logout"
+            android:background="@drawable/buttonbackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+-->
+
+</LinearLayout>

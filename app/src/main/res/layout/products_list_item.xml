@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--TODO: redesign this using RelativeLayout  -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_container"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_prod_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center" />
+
+                <ProgressBar
+                    android:id="@+id/pb_image_upload"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_prod_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_toRightOf="@+id/image_container"
+                android:text="Shoe 1"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_rupee_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image_container"
+                android:layout_below="@id/tv_prod_title"
+                android:text="\u20B9"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_prod_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_rupee_symbol"
+                android:layout_below="@id/tv_prod_title"
+                android:text="15236"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_rupee_symbol2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image_container"
+                android:layout_below="@id/tv_prod_price"
+                android:text="\u20B9"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_prod_disc_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_rupee_symbol2"
+                android:layout_below="@id/tv_prod_price"
+                android:text="15236"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_prod_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_prod_title"
+                android:layout_marginLeft="22dp"
+                android:layout_toRightOf="@+id/tv_prod_price"
+                android:text="15X15"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_prod_gender"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_prod_size"
+                android:layout_toRightOf="@+id/tv_prod_price"
+                android:layout_marginLeft="22dp"
+                android:text="Women"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_prod_sole_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_prod_size"
+                android:layout_toRightOf="@id/tv_prod_size"
+                android:layout_marginLeft="22dp"
+                android:text="EVA Sole"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_prod_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_prod_gender"
+                android:layout_toRightOf="@id/tv_prod_gender"
+                android:layout_marginLeft="14dp"
+                android:text="Red"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_prod_desc"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="4dp"
+                android:layout_toRightOf="@+id/image_container"
+                android:layout_below="@+id/tv_prod_gender"
+                android:text="product details are described here as per the requirements"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/toolbar_dropshadow"/>
+
+</LinearLayout>

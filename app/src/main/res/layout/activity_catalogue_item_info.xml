@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    tools:context=".activities.CatalogueItemInfo">
+    <TextView
+        android:id="@+id/cat_item_tv"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Item Name" />
+
+    <EditText
+        android:layout_marginTop="4dp"
+        android:id="@+id/cat_item_et"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cat_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/cat_price_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/cat_cnqty_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CN Qty."
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/cat_cnqty_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/cat_size_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/cat_size_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/catalogue_color_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/cat_color_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/cat_select_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Categories"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/cat_select_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/cat_s_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Gender"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/cat_sk_et"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/cat_disc_pr_tv"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="DiscountPrice" />
+
+            <EditText
+                android:id="@+id/cat_disc_et"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/cat_sqty_tv"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Set Qty." />
+
+            <EditText
+                android:layout_marginTop="8dp"
+
+                android:id="@+id/cat_sqty_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/cat_ss_tv"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Size Selection" />
+
+            <EditText
+                android:layout_marginTop="8dp"
+                android:id="@+id/cat_ss_et"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/cat_cs_tv"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Color Selection" />
+
+            <EditText
+                android:layout_marginTop="8dp"
+
+                android:id="@+id/cat_cs_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/cat_st_tv"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                android:layout_height="wrap_content"
+                android:text="Sort Tags" />
+
+            <EditText
+                android:layout_marginTop="8dp"
+
+                android:id="@+id/cat_st_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/cat_sn_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sole Name"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_marginTop="8dp"
+
+                android:id="@+id/catalogue_s_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:text="This is an product description available for product details. this is an product description available for product details"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

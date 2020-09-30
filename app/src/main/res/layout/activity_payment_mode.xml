@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="16dp"
+    tools:context=".activities.PaymentMode">
+<LinearLayout
+    android:layout_weight="0.9"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:textStyle="bold"
+        android:text="Choose Payment mode"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <RadioGroup
+        android:id="@+id/payment_rg"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:id="@+id/payment_cod_rb"
+            android:textSize="20dp"
+            android:paddingLeft="32dp"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash on delivery (COD)"/>
+
+        <RadioButton
+            android:id="@+id/payment_pn_rb"
+            android:textSize="20dp"
+            android:paddingLeft="32dp"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay Now "/>
+
+
+        <RadioButton
+            android:id="@+id/payment_op_rb"
+            android:textSize="20dp"
+            android:padding="8dp"
+            android:paddingLeft="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offline Payment"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:text="Return Policy"
+        android:textSize="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+<Button
+    android:id="@+id/payment_ordernow_btn"
+    android:text="Order Now"
+    android:textAllCaps="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+</LinearLayout>

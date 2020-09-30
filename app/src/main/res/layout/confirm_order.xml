@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp">
+
+    <LinearLayout
+        android:weightSum="1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="0.3"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:padding="4dp"
+                android:text="Name :"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Phone :"
+                android:padding="4dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Location :"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.4"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+
+                android:id="@+id/name_f"
+                android:padding="4dp"
+                android:text="Mukesh Gupta"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:id="@+id/phone_f"
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="999999999"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/loaction_f"
+                android:text="Noida"
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/f_view_b"
+                android:drawableStart="@drawable/view_icon"
+                android:text="View"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="#000000" />
+
+            <Button
+                android:id="@+id/f_delete_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#F64E19"
+                android:drawableStart="@drawable/delete"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="#ffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
